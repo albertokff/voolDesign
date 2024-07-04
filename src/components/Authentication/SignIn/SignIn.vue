@@ -5,12 +5,12 @@ import { VAlert } from 'vuetify/lib/components/index.mjs';
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
+const authentication = useAuthenticationStore()
 
 const showMessage = ref(false)
 const message = ref('')
 const classAlert = ref('')
 
-const authentication = useAuthenticationStore()
 const email = ref('')
 const password = ref('')
 

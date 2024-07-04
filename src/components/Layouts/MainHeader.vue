@@ -12,9 +12,8 @@
                   class="d-flex justify-content-between align-items-center cw-273"
                 >
                   <router-link to="/" style="text-decoration:none;">
-                    <span style="font-size:34px;color:black;text-decoration:none;">
-                      <i class="fa-solid fa-brush"></i>
-                      VoolDesign
+                    <span style="font-size:34px;color:black;text-decoration:none;">                      
+                      <h3><i class="fa-solid fa-brush" />&nbsp;VoolDesign</h3>
                     </span>
                   </router-link>
                   <div>

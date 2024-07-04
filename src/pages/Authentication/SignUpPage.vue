@@ -1,7 +1,8 @@
 <template>
-  <div class="main-content p-0">
+  <div style="margin-top: 50px;">
     <div class="container-fluid">
       <SignUp />
+
       <MainFooter />
     </div>
   </div>
