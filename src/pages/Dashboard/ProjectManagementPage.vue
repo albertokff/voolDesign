@@ -39,8 +39,7 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from "vue";
+<script setup lang="ts">
 import ProjectProgress from "../../components/Dashboard/ProjectManagement/ProjectProgress.vue";
 import RevenueChart from "../../components/Dashboard/ProjectManagement/RevenueChart/index.vue";
 import ProjectProgressChart from "../../components/Dashboard/ProjectManagement/ProjectProgressChart.vue";
@@ -51,22 +50,5 @@ import MainSidebar from "../../components/Layouts/MainSidebar.vue";
 import MainFooter from "../../components/Layouts/MainFooter.vue";
 import stateStore from "../../utils/store";
 
-export default defineComponent({
-  name: "ProjectManagementPage",
-  components: {
-    ProjectProgress,
-    RevenueChart,
-    ProjectProgressChart,
-    ProjectRoadmapChart,
-    ProjectTable,
-    MainFooter,
-    MainHeader,
-    MainSidebar,
-  },
-
-  setup() {
-    const stateStoreInstance = stateStore;
-    return { stateStoreInstance };
-  }
-});
+const stateStoreInstance = stateStore;    
 </script>

@@ -1,3 +1,7 @@
+<script setup lang="ts">
+
+</script>
+
 <template>
   <div class="row">
     <div class="col-lg-9">
@@ -8,16 +12,7 @@
               class="w-100 h-400 rounded-top"
               src="../../../assets/images/profile-bg.jpg"
               alt="profile-bg"
-            />
-            <div
-              class="product-upload position-absolute bottom-0 end-0 d-none d-sm-block d-md-block d-lg-block"
-              style="right: 10px !important; bottom: 10px !important"
-            >
-              <label for="file-upload" class="file-upload mb-0">
-                <img src="../../../assets/images/upload-3.svg" alt="upload-3" />
-              </label>
-              <input id="file-upload" type="file" />
-            </div>
+            />            
           </div>
 
           <div class="d-flex justify-content-between align-items-center p-4">
@@ -46,20 +41,15 @@
                 <h4 class="fs-18 fw-medium">Sutherland Lee</h4>
                 <span class="text-body">lee@gmail.com</span>
               </div>
-            </div>
+            </div>  
 
-            <div class="d-flex">
-              <a
-                href="#"
-                class="default-btn text-decoration-none d-none d-lg-block d-md-block d-sm-block text-white py-1 px-2"
-                >Message</a
-              >
-              <a
-                href="#"
-                class="default-btn border-btn text-decoration-none d-none d-lg-block d-md-block d-sm-block ms-3 py-1 px-2"
-                >Follow</a
-              >
-            </div>
+              <div class="d-flex">
+                <a
+                  href="#"
+                  class="default-btn text-decoration-none d-none d-lg-block d-md-block d-sm-block text-white py-1 px-2"
+                  >Editar Detalhes</a
+                >                
+              </div>                      
           </div>
         </div>
       </div>
@@ -79,7 +69,7 @@
             aria-controls="overview-tab-pane"
             aria-selected="true"
           >
-            Overview
+            Visão Geral
           </button>
         </li>
         <li class="nav-item" role="presentation">
@@ -93,7 +83,7 @@
             aria-controls="timeline-tab-pane"
             aria-selected="false"
           >
-            Timeline
+            Linha do Tempo
           </button>
         </li>
         <li class="nav-item" role="presentation">
@@ -107,7 +97,7 @@
             aria-controls="activity-tab-pane"
             aria-selected="false"
           >
-            Activity
+            Atividade
           </button>
         </li>
       </ul>
@@ -126,7 +116,7 @@
               >
                 <div class="card-body p-4">
                   <div class="d-flex justify-content-between">
-                    <h3 class="fw-medium fs-18">Total Orders</h3>
+                    <h3 class="fw-medium fs-18">Total de Downloads</h3>
                     <div
                       class="d-flex justify-content-between align-items-center"
                     >
@@ -137,14 +127,14 @@
                       >
                     </div>
                   </div>
-                  <h1 class="fw-medium fs-30 mb-4">15,717</h1>
+                  <h1 class="fw-medium fs-30 mb-4">15.717</h1>
                   <div class="d-flex align-items-end justify-content-between">
                     <img
                       src="../../../assets/images/icons/e-commerce-1.svg"
                       alt="e-commerce-1"
                     />
                     <p class="text-dark">
-                      5.75% of the total project is complete
+                      5.75% do total de downloads realizados no sistema.
                     </p>
                   </div>
                 </div>
@@ -156,7 +146,7 @@
               >
                 <div class="card-body p-4">
                   <div class="d-flex justify-content-between">
-                    <h3 class="fw-medium fs-18">Total Revenue</h3>
+                    <h3 class="fw-medium fs-18">Total de Pagamentos</h3>
                     <div
                       class="d-flex justify-content-between align-items-center"
                     >
@@ -167,13 +157,13 @@
                       >
                     </div>
                   </div>
-                  <h1 class="fw-medium fs-30 mb-4">$94.50K</h1>
+                  <h1 class="fw-medium fs-30 mb-4">R$94,50</h1>
                   <div class="d-flex align-items-end justify-content-between">
                     <img
                       src="../../../assets/images/icons/e-commerce-3.svg"
                       alt="e-commerce-3"
                     />
-                    <p class="text-dark">Revenue increases this month</p>
+                    <p class="text-dark">Montante total gasto pelo usuário.</p>
                   </div>
                 </div>
               </div>
@@ -184,16 +174,7 @@
               >
                 <div class="card-body p-4">
                   <div class="d-flex justify-content-between">
-                    <h3 class="fw-medium fs-18">New Vs Returning</h3>
-                    <select
-                      class="form-select border-0"
-                      aria-label="Default select example"
-                    >
-                      <option selected>This Month</option>
-                      <option value="1">Last Month</option>
-                      <option value="2">This Year</option>
-                      <option value="3">Last Year</option>
-                    </select>
+                    <h3 class="fw-medium fs-18">Downloads neste mês</h3>                    
                   </div>
                   <h1 class="fw-medium fs-30 mb-4">1,000</h1>
                   <div
@@ -207,268 +188,13 @@
                       />
                     </div>
                     <div>
-                      <p class="text-dark">3.55% since last week</p>
+                      <p class="text-dark">3.55% desde a última semana</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-
-          <!-- Start Order Table Area -->
-          <div class="card border-0 box-shadow border-radius-10 mb-4">
-            <div class="card-body p-4">
-              <div
-                class="card-title d-flex justify-content-between align-items-center mb-3"
-              >
-                <h3 class="fw-medium fs-18 mb-0">My Product</h3>
-
-                <button
-                  class="btn btn-primary default-btn"
-                  type="button"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#offcanvasRight"
-                  aria-controls="offcanvasRight"
-                >
-                  + Add New
-                </button>
-              </div>
-
-              <div class="all-table scroll-bar h-608">
-                <table class="table align-middle mb-0">
-                  <thead>
-                    <tr>
-                      <th class="text-dark fw-medium fs-14 ps-0" scope="col">
-                        Product
-                      </th>
-                      <th class="text-dark fw-medium fs-14" scope="col">
-                        Price
-                      </th>
-                      <th class="text-dark fw-medium fs-14" scope="col">
-                        Orders
-                      </th>
-                      <th class="text-dark fw-medium fs-14" scope="col">
-                        Revenue
-                      </th>
-                    </tr>
-                  </thead>
-
-                  <tbody>
-                    <tr>
-                      <td class="ps-0">
-                        <div class="d-flex align-items-center">
-                          <div class="c-form-check form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                          </div>
-                          <img
-                            class="wh-50 rounded-2"
-                            src="../../../assets/images/products/product-9.jpg"
-                            alt="product-9"
-                          />
-                          <h3 class="fs-14 text-dark ms-3">
-                            Gold ring in a box
-                          </h3>
-                        </div>
-                      </td>
-                      <td>
-                        <span class="text-body">$300</span>
-                      </td>
-                      <td>
-                        <span class="text-body">10</span>
-                      </td>
-                      <td>
-                        <span class="text-body">$3,000</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="ps-0">
-                        <div class="d-flex align-items-center">
-                          <div class="c-form-check form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                          </div>
-                          <img
-                            class="wh-50 rounded-2"
-                            src="../../../assets/images/products/product-2.jpg"
-                            alt="product-2"
-                          />
-                          <h3 class="fs-14 text-dark ms-3">Headphone</h3>
-                        </div>
-                      </td>
-                      <td>
-                        <span class="text-body">$25</span>
-                      </td>
-                      <td>
-                        <span class="text-body">48</span>
-                      </td>
-                      <td>
-                        <span class="text-body">$1,200</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="ps-0">
-                        <div class="d-flex align-items-center">
-                          <div class="c-form-check form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                          </div>
-                          <img
-                            class="wh-50 rounded-2"
-                            src="../../../assets/images/products/product-3.jpg"
-                            alt="product-3"
-                          />
-                          <h3 class="fs-14 text-dark ms-3">Hand watch</h3>
-                        </div>
-                      </td>
-                      <td>
-                        <span class="text-body">$180</span>
-                      </td>
-                      <td>
-                        <span class="text-body">34</span>
-                      </td>
-                      <td>
-                        <span class="text-body">$6,162</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="ps-0">
-                        <div class="d-flex align-items-center">
-                          <div class="c-form-check form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                          </div>
-                          <img
-                            class="wh-50 rounded-2"
-                            src="../../../assets/images/products/product-10.jpg"
-                            alt="product-10"
-                          />
-                          <h3 class="fs-14 text-dark ms-3">Tiny sneakers</h3>
-                        </div>
-                      </td>
-                      <td>
-                        <span class="text-body">$65</span>
-                      </td>
-                      <td>
-                        <span class="text-body">62</span>
-                      </td>
-                      <td>
-                        <span class="text-body">$4,030</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="ps-0">
-                        <div class="d-flex align-items-center">
-                          <div class="c-form-check form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                          </div>
-                          <img
-                            class="wh-50 rounded-2"
-                            src="../../../assets/images/products/product-7.jpg"
-                            alt="product-7"
-                          />
-                          <h3 class="fs-14 text-dark ms-3">
-                            Black dslr camera
-                          </h3>
-                        </div>
-                      </td>
-                      <td>
-                        <span class="text-body">$5000</span>
-                      </td>
-                      <td>
-                        <span class="text-body">14</span>
-                      </td>
-                      <td>
-                        <span class="text-body">$70,000</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="ps-0">
-                        <div class="d-flex align-items-center">
-                          <div class="c-form-check form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                          </div>
-                          <img
-                            class="wh-50 rounded-2"
-                            src="../../../assets/images/products/product-5.jpg"
-                            alt="product-5"
-                          />
-                          <h3 class="fs-14 text-dark ms-3">Smart phone</h3>
-                        </div>
-                      </td>
-                      <td>
-                        <span class="text-body">$50</span>
-                      </td>
-                      <td>
-                        <span class="text-body">11</span>
-                      </td>
-                      <td>
-                        <span class="text-body">$999</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="ps-0">
-                        <div class="d-flex align-items-center">
-                          <div class="c-form-check form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                          </div>
-                          <img
-                            class="wh-50 rounded-2"
-                            src="../../../assets/images/products/product-1.jpg"
-                            alt="product-1"
-                          />
-                          <h3 class="fs-14 text-dark ms-3">
-                            Gold ring with diamonds
-                          </h3>
-                        </div>
-                      </td>
-                      <td>
-                        <span class="text-body">$60</span>
-                      </td>
-                      <td>
-                        <span class="text-body">15</span>
-                      </td>
-                      <td>
-                        <span class="text-body">$2000</span>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-          <!-- End Order Table Area -->
+          </div>       
 
           <!-- Start Default Offcanvas From Area -->
           <div
@@ -1617,7 +1343,7 @@
     <div class="col-lg-3">
       <div class="card border-0 box-shadow border-radius-10 mb-4">
         <div class="card-body p-4">
-          <h4 class="fs-18 fw-medium mb-3">User Bio</h4>
+          <h4 class="fs-18 fw-medium mb-3">Biografia do Usuário</h4>
           <p class="mb-4 fs-14 text-body">
             Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
             Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci
@@ -1627,92 +1353,27 @@
             adipiscing elit.
           </p>
 
-          <h4 class="fs-18 fw-medium mb-3">Contact Info</h4>
+          <h4 class="fs-18 fw-medium mb-3">Informações de Contato</h4>
           <ul class="ps-0 mb-4 list-unstyled">
             <li class="fs-14 text-body mb-2">
-              <span class="text-dark">Name:</span> Sutherland Lee
+              <span class="text-dark">Nome:</span> Sutherland Lee
             </li>
             <li class="fs-14 text-body mb-2">
               <span class="text-dark">Email:</span> lee@gmail.com
             </li>
             <li class="fs-14 text-body mb-2">
-              <span class="text-dark">Phone:</span> +1 444 222 4433
+              <span class="text-dark">Telefone:</span> +1 444 222 4433
             </li>
             <li class="fs-14 text-body mb-2">
-              <span class="text-dark">Web:</span> www.example.com
+              <span class="text-dark">Site:</span> www.example.com
             </li>
             <li class="fs-14 text-body mb-2">
-              <span class="text-dark">Address:</span> 84 S. Arrowhead Court
+              <span class="text-dark">Endereço:</span> 84 S. Arrowhead Court
               Branford, WL 80680
             </li>
-          </ul>
-
-          <h4 class="fs-18 fw-medium mb-4">Social Profiles:</h4>
-          <ul class="ps-0 mb-4 list-unstyled d-flex">
-            <li>
-              <a
-                href="https://www.facebook.com/"
-                class="default-btn text-decoration-none border-btn px-3 py-2 d-inline-block"
-                target="_blank"
-              >
-                <vue-feather type="facebook" style="width: 16"></vue-feather>
-              </a>
-            </li>
-            <li class="ms-2">
-              <a
-                href="https://www.twitter.com/"
-                class="default-btn text-decoration-none border-btn px-3 py-2 d-inline-block"
-                target="_blank"
-              >
-                <vue-feather type="twitter" style="width: 16"></vue-feather>
-              </a>
-            </li>
-            <li class="ms-2">
-              <a
-                href="https://www.linkedin.com/"
-                class="default-btn text-decoration-none border-btn px-3 py-2 d-inline-block"
-                target="_blank"
-              >
-                <vue-feather type="linkedin" style="width: 16"></vue-feather>
-              </a>
-            </li>
-            <li class="ms-2">
-              <a
-                href="https://www.mail.com/"
-                class="default-btn text-decoration-none border-btn px-3 py-2 d-inline-block"
-                target="_blank"
-              >
-                <vue-feather type="mail" style="width: 16"></vue-feather>
-              </a>
-            </li>
-          </ul>
-
-          <h4 class="fs-18 fw-medium mb-3">Other Info:</h4>
-          <ul class="ps-0 mb-0 list-unstyled">
-            <li class="fs-14 text-body mb-2">
-              <span class="text-dark">Total Balance:</span> $94,500
-            </li>
-            <li class="fs-14 text-body mb-2">
-              <span class="text-dark">Email:</span> lee@gmail.com
-            </li>
-            <li class="fs-14 text-body mb-2">
-              <span class="text-dark">Orders:</span> 685
-            </li>
-            <li class="fs-14 text-body mb-2">
-              <span class="text-dark">Products:</span> 1250
-            </li>
-            <li class="fs-14 text-body mb-0">
-              <span class="text-dark">Event:</span> 07 events
-            </li>
-          </ul>
+          </ul>         
         </div>
       </div>
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  name: "ProfileContent",
-};
-</script>
