@@ -20,7 +20,7 @@ export const useAuthenticationStore = defineStore('authentication', {
 
                 this.answerApi = message.loginSuccess
                 this.classAlert = 'success'
-                this.isRegistered = true
+                this.isLogged = true
                 })
                 .catch((error) => {
                 this.errorMessage = error.code
@@ -36,7 +36,7 @@ export const useAuthenticationStore = defineStore('authentication', {
                     
                     this.answerApi = message.registerSuccess
                     this.classAlert = 'success'
-                    this.isLogged = true 
+                    this.isRegistered = true 
                 })
                 .catch((error) => {
                     this.errorMessage = error.code

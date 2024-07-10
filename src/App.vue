@@ -1,4 +1,4 @@
-<template>
+<template>  
   <PreLoader v-if="isLoading" />
 
     <router-view />

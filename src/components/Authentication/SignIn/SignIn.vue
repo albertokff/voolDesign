@@ -3,6 +3,7 @@ import { ref } from 'vue'
 import { useAuthenticationStore } from '@/stores/authentication'
 import { VAlert } from 'vuetify/lib/components/index.mjs';
 import { useRouter } from 'vue-router'
+import background from '@/assets/images/background-beach.jpg'
 
 const router = useRouter()
 const authentication = useAuthenticationStore()
@@ -22,6 +23,8 @@ const login = async () => {
     classAlert.value = authentication.classAlert
     showMessage.value = true
 
+    console.log(authentication.isLogged)
+
     if (authentication.isLogged === true)
       router.push('/')
   }
@@ -38,9 +41,9 @@ const login = async () => {
 </script>
 
 <template>
-  <div class="h-80vh">
+  <div class="h-80vh background">
       <div class="d-table">
-        <div class="d-table-cell">
+        <div class="d-table-cell">                     
           <div
             class="card border-0 box-shadow border-radius-10 mb-4 w-100"
             style="max-width: 500px; margin: auto"
@@ -128,3 +131,10 @@ const login = async () => {
       </div>
     </div>
 </template>
+
+<style>
+  .background {
+    background-image: url('/src/assets/images/background-beach.jpg');
+    background-size:cover;
+  }
+</style>
