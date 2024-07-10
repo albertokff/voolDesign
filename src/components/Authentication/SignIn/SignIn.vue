@@ -26,7 +26,7 @@ const login = async () => {
     console.log(authentication.isLogged)
 
     if (authentication.isLogged === true)
-      router.push('/')
+      router.push('/home-page')
   }
   catch (e) {
     message.value = authentication.answerApi

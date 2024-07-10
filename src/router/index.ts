@@ -93,6 +93,11 @@ import PrivacyPolicyPage from "../pages/Setting/PrivacyPolicyPage.vue";
 const routes = [
   {
     path: "/",
+    name: "SignInPageR",
+    component: SignInPage,
+  },
+  {
+    path: "/home-page",
     name: "ProjectManagementPage",
     component: ProjectManagementPage,
   },
