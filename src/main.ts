@@ -6,6 +6,7 @@ import FirebasePlugin from "./firebase/firebasePlugin";
 import router from "./router";
 import BootstrapVueNext from "bootstrap-vue-next";
 import VueApexCharts from "vue3-apexcharts";
+import VueFeather from 'vue-feather';
 
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue-next/dist/bootstrap-vue-next.css";
@@ -20,6 +21,7 @@ app.use(pinia)
 app.use(vuetify)
 app.use(FirebasePlugin)
 app.use(router)
-app.use(VueApexCharts);
-app.use(BootstrapVueNext);
-app.mount("#app");
+app.use(VueApexCharts)
+app.use(BootstrapVueNext)
+app.component(VueFeather.name!.toString(), VueFeather)
+app.mount("#app")
