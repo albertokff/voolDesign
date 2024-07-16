@@ -89,12 +89,13 @@ import AccountSettingsPage from "../pages/Setting/AccountSettingsPage.vue";
 import ChangePasswordPage from "../pages/Setting/ChangePasswordPage.vue";
 import ConnectionsPage from "../pages/Setting/ConnectionsPage.vue";
 import PrivacyPolicyPage from "../pages/Setting/PrivacyPolicyPage.vue";
+import PrincipalPage from "../pages/Showcase/principal-page.vue"
 
 const routes = [
   {
     path: "/",
-    name: "SignInPageR",
-    component: SignInPage,
+    name: "PrincipalPage",
+    component: PrincipalPage,
   },
   {
     path: "/home-page",
