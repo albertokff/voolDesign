@@ -2,7 +2,7 @@
   <div
     class="fundoGradiente"
     style="height:100vh;width:100vw;"
-  >    
+  >
     <div class="row">
       <div class="col-md-6 mt-10">
         <div>
@@ -12,15 +12,52 @@
               VoolDesign
             </span>
           </a>
-          <p class="text-black" style="margin-left:90px;">Baixe seu arquivo facilmente.</p>                                   
+          <p class="text-black" style="margin-left:90px;">Baixe seu arquivo facilmente.</p>
         </div>
       </div>
-      <div class="col-md-6" style="display:flex;justify-content: end;align-items: center;padding-right:70px;">            
+      <div class="col-md-6" style="display:flex;justify-content: end;align-items: center;padding-right:70px;">
         <span class="mt-10 text-black">Planos</span>
         <span class="mt-10 text-black ml-10"><i class="fa-solid fa-user" style="color: #000000;"></i>&nbsp;&nbsp;Login</span>
-        <button class="btn btn-warning text-black mt-10 ml-10" type="submit" style="border:3px solid black;height:40px;">Começar</button>        
+        <button class="btn btn-warning text-black mt-10 ml-10" type="submit" style="border:3px solid black;height:40px;">Começar</button>
       </div>
-    </div>                 
+    </div>
+    <div class="row">
+      <div class="col-md-6" style="margin-top:250px;text-align: center;">        
+          <span class="text-black" style="font-size:50px;font-weight: 900;">Precisando de um <br> Download?</span><br>        
+          <span class="text-black" style="font-size:14px;">O VoolDesign foi projetado para tornar o trabalho de designers e agências mais fácil.</span><br>        
+          <button class="btn mt-10" style="background-color: black;color:white;">Começar</button>        
+      </div>
+      <div class="col-md-6" style="display: flex;flex-wrap: wrap;margin-top:200px">
+        <div class="row">
+          <div class="col-md-12">
+            <i class="fa-solid fa-film text-black" style="font-size:200px"></i>
+          </div>                
+          <div class="col-md-12">
+            <i class="fa-solid fa-square-caret-right text-black" style="font-size:200px"></i>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <i class="fa-solid fa-image fa-2xl text-black" style="font-size:200px"></i>
+          </div>
+          <div class="col-md-12">
+            <i class="fa-solid fa-file fa-2xl text-black" style="font-size:200px"></i>        
+          </div>
+        </div>              
+      </div>
+    </div>
+    <div class="row" style="display:flex;text-align:center;justify-content: center;margin-top:100px;">
+      <div class="col-md-2">
+        <span class="text-black">Velocidade e<br> Segurança</span>  
+      </div>
+      <div class="col-md-2">
+        <span class="text-black">Flexibilidade e<br> Agilidade</span>  
+      </div>
+      <div class="col-md-2">
+        <span class="text-black">Melhor<br> Colaboração</span>  
+      </div>
+    </div>
   </div>
 </template>
 
