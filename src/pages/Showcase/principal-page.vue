@@ -55,7 +55,7 @@
         </div>              
       </div>
     </div>
-    <div class="row" style="display:flex;text-align:center;justify-content: center;margin-top:100px;">
+    <div class="row mt-10" style="display:flex;text-align:center;justify-content: center;margin-bottom:200px;">
       <div class="col-md-2" style="display:flex;align-items: center;">
         <i class="fa-solid fa-caret-left" style="color: #000000;font-size:50px;" />
         <i class="fa-solid fa-caret-left" style="color: #000000;font-size:50px;" />
@@ -70,6 +70,59 @@
         <i class="fa-solid fa-arrows-turn-to-dots" style="color: #000000;font-size:50px;" />
         <span class="text-black">&nbsp;&nbsp;Melhor<br> &nbsp;&nbsp;Colaboração</span>  
       </div>
+    </div>
+    <div class="row" style="width:100%;background-color: white;height:300px;">
+      <div class="col-md-6" style="display:flex;align-items: center;justify-content:center;">
+        <h1 style="font-weight: 900;">Com o sistema<br>certo, grandes<br>coisas acontecem.</h1>  
+      </div>
+      <div class="col-md-6" style="display:flex;align-items:center;justify-content: center;">
+        <span style="font-size:24px;">VoolDesign é a solução ideal para designers e<br> profissionais de agências. Baixe seu arquivo<br> facilmente, enviando o link para nosso sistema.</span>
+      </div>
+    </div>
+    <div class="row mt-10" style="display:flex;justify-content: center;">
+      <h1 style="margin-left:150px;">O que oferecemos</h1>
+    </div>
+    <div class="row mt-10 mb-10">
+      <div class="col-md-12" style="display:flex;justify-content: center;">
+        <i class="fa-solid fa-music" style="color: #000000;font-size:200px;margin-right:150px;" />
+        <i class="fa-solid fa-video" style="color: #000000;font-size:200px;margin-right:150px;" />
+        <i class="fa-solid fa-file" style="color: #000000;font-size:200px;margin-right:150px;" />
+        <i class="fa-solid fa-image" style="color: #000000;font-size:200px;" />
+      </div>     
+    </div>
+    <div class="row">      
+      <div class="col-md-6" style="display: flex;flex-wrap: wrap;text-align:center;margin-top:200px;">
+        <div class="row">
+          <div class="col-md-12">
+            <i class="fa-solid fa-film text-black" style="font-size:200px"></i>
+          </div>                
+          <div class="col-md-12">
+            <i class="fa-solid fa-square-caret-right text-black" style="font-size:200px"></i>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <i class="fa-solid fa-image fa-2xl text-black" style="font-size:200px"></i>
+          </div>
+          <div class="col-md-12">
+            <i class="fa-solid fa-file fa-2xl text-black" style="font-size:200px"></i>        
+          </div>
+        </div>              
+      </div>      
+      <div class="col-md-6" style="display: flex;flex-wrap: wrap;text-align:center;margin-top:200px;">
+        <div class="row">          
+          <div class="col-md-12">
+            <h1>Para designers e para agências,</h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <span>VooLdesign é a solução ideal para designers<br> e profissionais de agências, para fazer o download<br> rapidamente e de maneira segura de diversos tipos<br> de arquivos.</span>
+          </div>          
+        </div>              
+      </div>      
     </div>
   </div>
 </template>
