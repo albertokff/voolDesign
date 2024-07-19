@@ -1,19 +1,17 @@
 <template>
   <div
     class="fundoGradiente"
-    style="height:100vh;width:100vw;"
+    style="height:100%;width:100vw;"
   >
     <div class="row">
-      <div class="col-md-6 mt-10">
-        <div>
+      <div class="col-md-6 mt-10" style="display:flex;align-items: center;">        
           <i class="fa-brands fa-dropbox fa-2xl mr-5" style="color: #000000;font-size:50px;margin-left:30px;" />
           <a class="navbar-brand" href="#">
             <span style="font-weight: 900;font-size:30px;color:black;">
               VoolDesign
-            </span>
+            </span><br>
+            <p class="text-black">Baixe seu arquivo facilmente.</p>        
           </a>
-          <p class="text-black" style="margin-left:90px;">Baixe seu arquivo facilmente.</p>
-        </div>
       </div>
       <div class="col-md-6" style="display:flex;justify-content: end;align-items: center;padding-right:70px;">
         <span class="mt-10 mr-10 text-black">Planos</span>
@@ -58,14 +56,19 @@
       </div>
     </div>
     <div class="row" style="display:flex;text-align:center;justify-content: center;margin-top:100px;">
-      <div class="col-md-2">
-        <span class="text-black">Velocidade e<br> Segurança</span>  
+      <div class="col-md-2" style="display:flex;align-items: center;">
+        <i class="fa-solid fa-caret-left" style="color: #000000;font-size:50px;" />
+        <i class="fa-solid fa-caret-left" style="color: #000000;font-size:50px;" />
+        <span class="text-black">
+          Velocidade e<br> Segurança</span>  
       </div>
-      <div class="col-md-2">
-        <span class="text-black">Flexibilidade e<br> Agilidade</span>  
+      <div class="col-md-2" style="display:flex;align-items: center;">
+        <i class="fa-solid fa-bezier-curve" style="color: #000000;font-size:50px;" />
+        <span class="text-black">&nbsp;&nbsp;Flexibilidade e<br> Agilidade</span>  
       </div>
-      <div class="col-md-2">
-        <span class="text-black">Melhor<br> Colaboração</span>  
+      <div class="col-md-2" style="display:flex;align-items:center;">
+        <i class="fa-solid fa-arrows-turn-to-dots" style="color: #000000;font-size:50px;" />
+        <span class="text-black">&nbsp;&nbsp;Melhor<br> &nbsp;&nbsp;Colaboração</span>  
       </div>
     </div>
   </div>
